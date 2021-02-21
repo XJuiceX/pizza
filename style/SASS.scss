@@ -1,0 +1,771 @@
+
+$font1: 'Nautilus';
+$font2: 'IsadoraBold';
+$font3: 'Raleway';
+
+
+
+
+header{
+    position: relative;
+    .bg{
+    width: 100%;
+    height: 860px;
+    z-index: -111;
+    position: absolute;
+    overflow: hidden;
+    
+     img{
+        position: relative;
+        width: 101%;
+        height: auto;
+        filter: blur(4px);
+        margin: -10px;
+        background-size: cover;
+        
+     }
+    }
+    nav{
+        width:  100%;
+        height: 120px;
+        background-color: rgb(0, 0, 0, 35%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+            section{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                    span{
+                      font-size: 30px;
+                      font-family: $font1;  
+                      color: #94774a;
+                      transform: skewY(-20deg)
+                        
+                    }
+                img{
+                    width: 50px;
+                    height: 50px;
+                    background-color: #94774a;
+                    border-radius: 50%;
+                    padding: 10px;
+                    margin-right: 20px;
+                }
+            }
+
+            ul{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                    li{
+                        list-style-type: none;
+                        color: white;
+                        margin-right: 20px;
+                        font-family: cursive;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                            span{
+                                font-size: 18px;
+                                transition: 1s;
+                                margin-right: 2px;
+                                width: 18px;
+                                height: 18px; 
+                                padding: 10px;
+                                border-radius: 50%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            &:hover{
+                                span{
+                                    background-color: #94774a;                              
+                                    transform: rotateX(360deg);
+                                    color: rgb(255, 255, 255);
+                                    
+                                    
+                                }
+
+                                
+                        }
+                            a{
+                                text-decoration: none;
+                                color: white;
+                                border-bottom: 1px solid white;
+                                font-size: 18px;
+                            }   
+                    }
+            }
+        
+                article{
+                    margin-left: 20px;
+                }
+    }
+
+}
+
+
+//=======================================MAIN
+
+main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+            
+    .choosePizza{   
+        width: 1140px;
+        margin-top: 140px;
+        z-index: 1;
+        min-width: 0;
+        .slick-slide{
+            width: 575px;
+        }
+        .slick-slider{
+            z-index: 999;
+             
+        };
+        
+        .slick-list{
+            overflow: hidden;
+        };
+           
+
+        .slick-track{
+            display: flex;
+            z-index: 999;
+             img{
+                 margin-left: 150px;
+             }
+            
+        }
+            i{  
+                font-size: 30px;
+                color: #5f5653;
+                margin: 0 150px 0 150px;
+                padding: 5px;
+                z-index: 999;
+                &:hover{
+                    color: white;
+
+                 }
+                 
+            }
+
+            img{
+                width: 510px;
+                height: 510px;
+                
+            }
+
+            .contentText{
+                display: flex;
+                margin-right: 30px;
+                z-index: 999;
+                section{
+                    h3{
+                        font-size: 40px;
+                        font-family: $font2;
+                        color: white;
+                    }
+                    article{
+                        font-size: 16px;
+                        font-family: $font3;
+                        color: white;
+                    }
+                }
+            }
+    }
+
+    .contentPizza{
+        position: relative;
+        top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 1140px;
+        height: 970px;
+        background-color: white;
+        overflow: hidden;
+         .text{
+             font-size: 30px;
+             font-family: $font3;
+             font-weight: bold;
+             margin-bottom: -160px;
+         }
+            .contentChoosePizza{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                overflow: hidden;
+                margin-top: 50px;
+                i{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #c59d5f;
+                    color: rgb(160, 154, 154);
+                    padding: 15px;
+                    border-radius: 40%;
+                    margin: -250px -11px 0 -11px;
+                    font-size: 30px;
+                    color: white;
+                    transition: 0.2s;
+                     &:hover{
+                         background-color: #dbbd90;
+                     }
+                }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 15px 0 15px;
+                            #pizza{
+                                width: 210px;
+                                height: 210px;
+                                position: absolute;
+                                z-index: 99;
+                                margin-top: -350px;
+                            }
+                            section{
+                                position: absolute;
+                                color: white;
+                                z-index: 100;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                align-items: center;
+                                margin-top: -20px;
+                                    .small{
+                                        background-color: #94774a;
+                                        width: 50px;
+                                        height: 50px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 50%;
+
+                                         a{
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background: rgba(0, 0, 0, 0.3);
+                                            padding: 9.2px;
+                                            border-radius: 50%;
+                                            text-decoration: none;
+                                            color: white;
+                                            font-family: cursive;
+                                         }
+                                    }
+                                    .large{
+                                        background-color: #c59d5f;
+                                        width: 60px;
+                                        height: 60px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 50%;
+                                        a{
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background: rgba(0, 0, 0, 0.3);
+                                            padding: 13px;
+                                            border-radius: 50%;
+                                            text-decoration: none;
+                                            color: white;
+                                            font-family: cursive;
+                                         }
+                                    }
+                                        article{
+                                            margin-left: 20px;
+                                            transition: 0.2s;
+                                            &:hover{
+                                                a{
+                                                    background-color: #a78a5f;
+                                                    transition: 0.2s;
+                                                }
+                                            }
+                                        }
+                                        
+                                        button{
+                                            width: 140px;
+                                            height: 45px;
+                                            position: relative;
+                                            left:20px;
+                                            background-color: #c59d5f;
+                                            border: none;
+                                            font-size: 16px;
+                                            font-family: cursive;
+                                            color: white;
+                                            transition: 0.7s;
+                                                &:hover{
+                                                    
+                                                    transform: rotate(15deg);
+                                                    
+                                                    
+                                                }
+                                        }
+                            }
+                    }
+                    .textContent{
+                        position: relative;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        color: black;
+                        .fa-check{
+                                position: absolute;
+                                right: 10px;
+                                &:hover{
+                                    color: white
+                                }
+                            }
+                            h2{
+                                font-family: $font3;
+                            }
+                            hr{
+                                column-rule: white;
+                                width: 100%;
+                            }
+                            p{
+                                font-family: $font3;
+                                
+                            }
+                            button{
+                                width: 140px;
+                                height: 45px;
+                                position: relative;            
+                                background-color: #c59d5f;
+                                border: none;
+                                font-size: 16px;
+                                font-family: cursive;
+                                color: white;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                transition: 0.2s;
+                                    &:hover{
+                                        background-color: #a77d3f;
+                                        i{
+                                            background-color: #a77d3f;
+                                            
+                                        }
+                                    }
+                                    i{
+                                        transition: 0.2s;
+                                    }
+                                    .fa-check{
+                                        margin-top: 0px;
+                                        position: relative;
+                                        background-color: #c59d5f;
+                                        font-size: 13px;
+                                        color: white;
+                                        margin-left: -11px;
+                                    }
+                            }
+                    }
+                    img{
+                        
+                        width: 295px;
+                        height: 360px;
+                    }
+            }
+    }
+
+
+    .zakuska{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 150px;
+        width: 100%;
+        height: 855px;
+            section{
+                font-family: $font3;
+                font-size: 18px;
+                h1{
+                    font-family: $font1;
+                    font-size: 30px;
+                }
+            }
+            .zakuskaContent{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                i{
+                    color: white;
+                    font-size: 30px;
+                    z-index: 99;
+                }
+                    .gg{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 20px;
+                            img{
+                                position: relative;
+                                width: 265px;
+                                height: 180px;
+                                z-index: 99;
+                            }
+                            .white{
+                                width: 265px;
+                                height: 150px;
+                                background-color: white;
+                                position: relative;
+                                z-index: 929;
+                                color: black;
+                                font-family: $font3;
+                                    article{
+                                        background-color: #c59d5f;
+                                        border-radius: 50%;
+                                        padding: 12px;
+                                        color: white;
+                                        z-index: 999;
+                                        margin-top: -55px;
+                                        font-family: $font3;
+                                    }
+                            }
+                            .grey{
+                                width: 265px;
+                                height: 70px;
+                                position: relative;
+                                background-color:#f2f2f2;
+                                color: black;
+                                font-size: 12px;
+                                font-family: $font3;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                            }
+                            button{
+                                width: 265px;
+                                height: 50px;
+                                background-color: #c59d5f;
+                                border: none;
+                                z-index: 99;
+                                font-family: $font3;
+                                color: white;
+                                transition: 0.2s;
+                                &:hover{
+                                    background-color: #a77d3f;
+                                }
+                            }
+                    }
+            }
+            .salat{
+                position: absolute;
+                width: 100%;
+                height: 845px;
+                background-color: rgb(0, 0, 0, 0.5);
+                padding-bottom: 10px;
+                
+            }
+            img{
+                width: 100%;
+                background-size: cover;
+                position: absolute;
+                z-index: -21;
+                height: auto;
+            }
+            section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+                text-align: center;
+                width: 500px;
+                color: white;
+                z-index: 1;
+            }
+            
+    }
+
+
+        .whater{
+            position: relative;
+            width: 100%;
+            height: 830px;
+            margin-top: -10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+                section{
+                    font-family: $font3;
+                    h1{
+                        font-family: $font1;
+                    }
+                }
+                .contentWhater{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    text-align: center; 
+                    margin-top: -20px;
+                    font-family: $font3;
+                    .fa-angle-right{
+                        &:hover{
+                            background-color:rgb(126, 124, 124);
+                            color: white;
+                            
+                        } 
+                    }
+                    .fa-angle-left{
+                        &:hover{
+                            background-color:rgb(126, 124, 124);
+                            color: white;
+                            
+                        }
+                    }
+                        i{
+                            padding: 10px;
+                            border-radius: 50px;
+                            transition: 0.4s;
+                            
+                        }
+                        .buyWhater{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+                            text-align: center;
+                            margin: 30px;
+                        img{
+                        width: 110px;
+                        height: 280px;
+                        }
+
+                       button{
+                        width: 140px;
+                        height: 45px;
+                        position: relative;            
+                        background-color: #c59d5f;
+                        border: none;
+                        font-size: 16px;
+                        font-family: cursive;
+                        color: white;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 20px;
+                        transition: 0.2s;
+                        &:hover{
+                            background-color: #a77d3f;
+                                
+                        }
+                       } 
+                    }
+                }
+        }
+
+            .Dostavka{
+                width: 100%;
+                height: 290px;
+                overflow: hidden;
+                background-image: url(../image/flour.jpg);
+                z-index: -1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                    section{
+                        color: white;
+                        font-family: $font3;
+                            h1{
+                                font-family: $font1;
+                            }
+                        
+                    }
+            }
+ }
+
+
+//=======================================footer
+
+ footer{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     .endContacts{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+     .data{
+         
+         height: 770px;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         margin-top: 40px;
+         
+            section{
+                margin-left: 20px;
+                font-family: $font3;
+                h1{
+                    font-family: $font1;
+                }
+            } 
+            .email{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                span{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px;
+                    font-style: italic;
+                    font-family: $font3;
+                } 
+
+                input{
+                    width: 675px;
+                    height: 45px;
+                    border: 2px solid #c59d5f;
+                    font-size: 24px;
+                    font-family: cursive;
+                    padding-left: 10px;
+                }    
+                    .block1{
+                        display: flex;
+                        flex-direction:row;
+                        justify-content: flex-start;
+
+                        input{
+                            width: 310px;
+                            height: 45px;
+                            border: 2px solid #c59d5f;
+                            font-size: 24px;
+                            padding-left: 10px;
+                            font-family: cursive;
+                        } 
+
+                        
+                    }
+            }
+     }
+
+     .endData{
+         width: 460px;
+         height: 600px;
+         background-color: #262626;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 400px;
+                height: 540px;
+                border: 1px solid #515151;
+
+                section{
+                    font-size: 30px;
+                    font-family: cursive;
+                    color: white;
+                }
+
+                hr{
+                    width: 90%;
+                    height: 1px;
+                }
+                span{
+                    font-size: 18px;
+                    color: white;
+                    font-family: cursive;
+                }
+            }
+     }
+
+    }
+     .contacts{
+         width: 100%;
+         height: 435px;
+         background-image: url(../image/flour.jpg);
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         align-items: center;
+         .sub_contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: white; 
+            line-height: 30px; 
+            font-family: $font3;
+             i{
+                 color: white;
+             }  
+         }
+     }
+ }
+
+
+
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "IsadoraBold"; 
+    // адрес шрифта и тип 
+    src: url("../fonts/IsadoraBold/IsadoraBold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+
+    @font-face {
+        // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+        font-family: "Nautilus"; 
+        // адрес шрифта и тип 
+        src: url("../fonts/NautilusPompilius/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype"); 
+        font-style: normal; 
+        font-weight: normal; 
+        }
+
+        @font-face {
+            // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+            font-family: "Raleway"; 
+            // адрес шрифта и тип 
+            src: url("../fonts/Raleway/RalewayRegular/RalewayRegular.ttf") format("truetype"); 
+            font-style: normal; 
+            font-weight: normal; 
+            }   
+
+            

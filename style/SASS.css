@@ -1,0 +1,679 @@
+header {
+  position: relative;
+}
+header .bg {
+  width: 100%;
+  height: 860px;
+  z-index: -111;
+  position: absolute;
+  overflow: hidden;
+}
+header .bg img {
+  position: relative;
+  width: 101%;
+  height: auto;
+  filter: blur(4px);
+  margin: -10px;
+  background-size: cover;
+}
+header nav {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+header nav section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header nav section span {
+  font-size: 30px;
+  font-family: "Nautilus";
+  color: #94774a;
+  transform: skewY(-20deg);
+}
+header nav section img {
+  width: 50px;
+  height: 50px;
+  background-color: #94774a;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+}
+header nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+header nav ul li {
+  list-style-type: none;
+  color: white;
+  margin-right: 20px;
+  font-family: cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li span {
+  font-size: 18px;
+  transition: 1s;
+  margin-right: 2px;
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li:hover span {
+  background-color: #94774a;
+  transform: rotateX(360deg);
+  color: white;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  font-size: 18px;
+}
+header nav article {
+  margin-left: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .choosePizza {
+  width: 1140px;
+  margin-top: 140px;
+  z-index: 1;
+  min-width: 0;
+}
+main .choosePizza .slick-slide {
+  width: 575px;
+}
+main .choosePizza .slick-slider {
+  z-index: 999;
+}
+main .choosePizza .slick-list {
+  overflow: hidden;
+}
+main .choosePizza .slick-track {
+  display: flex;
+  z-index: 999;
+}
+main .choosePizza .slick-track img {
+  margin-left: 150px;
+}
+main .choosePizza i {
+  font-size: 30px;
+  color: #5f5653;
+  margin: 0 150px 0 150px;
+  padding: 5px;
+  z-index: 999;
+}
+main .choosePizza i:hover {
+  color: white;
+}
+main .choosePizza img {
+  width: 510px;
+  height: 510px;
+}
+main .choosePizza .contentText {
+  display: flex;
+  margin-right: 30px;
+  z-index: 999;
+}
+main .choosePizza .contentText section h3 {
+  font-size: 40px;
+  font-family: "IsadoraBold";
+  color: white;
+}
+main .choosePizza .contentText section article {
+  font-size: 16px;
+  font-family: "Raleway";
+  color: white;
+}
+main .contentPizza {
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 1140px;
+  height: 970px;
+  background-color: white;
+  overflow: hidden;
+}
+main .contentPizza .text {
+  font-size: 30px;
+  font-family: "Raleway";
+  font-weight: bold;
+  margin-bottom: -160px;
+}
+main .contentPizza .contentChoosePizza {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 50px;
+}
+main .contentPizza .contentChoosePizza i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #c59d5f;
+  color: #a09a9a;
+  padding: 15px;
+  border-radius: 40%;
+  margin: -250px -11px 0 -11px;
+  font-size: 30px;
+  color: white;
+  transition: 0.2s;
+}
+main .contentPizza .contentChoosePizza i:hover {
+  background-color: #dbbd90;
+}
+main .contentPizza .contentChoosePizza div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 0 15px;
+}
+main .contentPizza .contentChoosePizza div #pizza {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  z-index: 99;
+  margin-top: -350px;
+}
+main .contentPizza .contentChoosePizza div section {
+  position: absolute;
+  color: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -20px;
+}
+main .contentPizza .contentChoosePizza div section .small {
+  background-color: #94774a;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+main .contentPizza .contentChoosePizza div section .small a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 9.2px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+}
+main .contentPizza .contentChoosePizza div section .large {
+  background-color: #c59d5f;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+main .contentPizza .contentChoosePizza div section .large a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 13px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+}
+main .contentPizza .contentChoosePizza div section article {
+  margin-left: 20px;
+  transition: 0.2s;
+}
+main .contentPizza .contentChoosePizza div section article:hover a {
+  background-color: #a78a5f;
+  transition: 0.2s;
+}
+main .contentPizza .contentChoosePizza div section button {
+  width: 140px;
+  height: 45px;
+  position: relative;
+  left: 20px;
+  background-color: #c59d5f;
+  border: none;
+  font-size: 16px;
+  font-family: cursive;
+  color: white;
+  transition: 0.7s;
+}
+main .contentPizza .contentChoosePizza div section button:hover {
+  transform: rotate(15deg);
+}
+main .contentPizza .contentChoosePizza .textContent {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: black;
+}
+main .contentPizza .contentChoosePizza .textContent .fa-check {
+  position: absolute;
+  right: 10px;
+}
+main .contentPizza .contentChoosePizza .textContent .fa-check:hover {
+  color: white;
+}
+main .contentPizza .contentChoosePizza .textContent h2 {
+  font-family: "Raleway";
+}
+main .contentPizza .contentChoosePizza .textContent hr {
+  column-rule: white;
+  width: 100%;
+}
+main .contentPizza .contentChoosePizza .textContent p {
+  font-family: "Raleway";
+}
+main .contentPizza .contentChoosePizza .textContent button {
+  width: 140px;
+  height: 45px;
+  position: relative;
+  background-color: #c59d5f;
+  border: none;
+  font-size: 16px;
+  font-family: cursive;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+main .contentPizza .contentChoosePizza .textContent button:hover {
+  background-color: #a77d3f;
+}
+main .contentPizza .contentChoosePizza .textContent button:hover i {
+  background-color: #a77d3f;
+}
+main .contentPizza .contentChoosePizza .textContent button i {
+  transition: 0.2s;
+}
+main .contentPizza .contentChoosePizza .textContent button .fa-check {
+  margin-top: 0px;
+  position: relative;
+  background-color: #c59d5f;
+  font-size: 13px;
+  color: white;
+  margin-left: -11px;
+}
+main .contentPizza .contentChoosePizza img {
+  width: 295px;
+  height: 360px;
+}
+main .zakuska {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 150px;
+  width: 100%;
+  height: 855px;
+}
+main .zakuska section {
+  font-family: "Raleway";
+  font-size: 18px;
+}
+main .zakuska section h1 {
+  font-family: "Nautilus";
+  font-size: 30px;
+}
+main .zakuska .zakuskaContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .zakuska .zakuskaContent i {
+  color: white;
+  font-size: 30px;
+  z-index: 99;
+}
+main .zakuska .zakuskaContent .gg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+main .zakuska .zakuskaContent .gg img {
+  position: relative;
+  width: 265px;
+  height: 180px;
+  z-index: 99;
+}
+main .zakuska .zakuskaContent .gg .white {
+  width: 265px;
+  height: 150px;
+  background-color: white;
+  position: relative;
+  z-index: 929;
+  color: black;
+  font-family: "Raleway";
+}
+main .zakuska .zakuskaContent .gg .white article {
+  background-color: #c59d5f;
+  border-radius: 50%;
+  padding: 12px;
+  color: white;
+  z-index: 999;
+  margin-top: -55px;
+  font-family: "Raleway";
+}
+main .zakuska .zakuskaContent .gg .grey {
+  width: 265px;
+  height: 70px;
+  position: relative;
+  background-color: #f2f2f2;
+  color: black;
+  font-size: 12px;
+  font-family: "Raleway";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main .zakuska .zakuskaContent .gg button {
+  width: 265px;
+  height: 50px;
+  background-color: #c59d5f;
+  border: none;
+  z-index: 99;
+  font-family: "Raleway";
+  color: white;
+  transition: 0.2s;
+}
+main .zakuska .zakuskaContent .gg button:hover {
+  background-color: #a77d3f;
+}
+main .zakuska .salat {
+  position: absolute;
+  width: 100%;
+  height: 845px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+main .zakuska img {
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  z-index: -21;
+  height: auto;
+}
+main .zakuska section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  color: white;
+  z-index: 1;
+}
+main .whater {
+  position: relative;
+  width: 100%;
+  height: 830px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+main .whater section {
+  font-family: "Raleway";
+}
+main .whater section h1 {
+  font-family: "Nautilus";
+}
+main .whater .contentWhater {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: -20px;
+  font-family: "Raleway";
+}
+main .whater .contentWhater .fa-angle-right:hover {
+  background-color: #7e7c7c;
+  color: white;
+}
+main .whater .contentWhater .fa-angle-left:hover {
+  background-color: #7e7c7c;
+  color: white;
+}
+main .whater .contentWhater i {
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+main .whater .contentWhater .buyWhater {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+}
+main .whater .contentWhater .buyWhater img {
+  width: 110px;
+  height: 280px;
+}
+main .whater .contentWhater .buyWhater button {
+  width: 140px;
+  height: 45px;
+  position: relative;
+  background-color: #c59d5f;
+  border: none;
+  font-size: 16px;
+  font-family: cursive;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+main .whater .contentWhater .buyWhater button:hover {
+  background-color: #a77d3f;
+}
+main .Dostavka {
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+  background-image: url(../image/flour.jpg);
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .Dostavka section {
+  color: white;
+  font-family: "Raleway";
+}
+main .Dostavka section h1 {
+  font-family: "Nautilus";
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .endContacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .endContacts .data {
+  height: 770px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+footer .endContacts .data section {
+  margin-left: 20px;
+  font-family: "Raleway";
+}
+footer .endContacts .data section h1 {
+  font-family: "Nautilus";
+}
+footer .endContacts .data .email {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .endContacts .data .email span {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  font-style: italic;
+  font-family: "Raleway";
+}
+footer .endContacts .data .email input {
+  width: 675px;
+  height: 45px;
+  border: 2px solid #c59d5f;
+  font-size: 24px;
+  font-family: cursive;
+  padding-left: 10px;
+}
+footer .endContacts .data .email .block1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+footer .endContacts .data .email .block1 input {
+  width: 310px;
+  height: 45px;
+  border: 2px solid #c59d5f;
+  font-size: 24px;
+  padding-left: 10px;
+  font-family: cursive;
+}
+footer .endContacts .endData {
+  width: 460px;
+  height: 600px;
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .endContacts .endData div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 540px;
+  border: 1px solid #515151;
+}
+footer .endContacts .endData div section {
+  font-size: 30px;
+  font-family: cursive;
+  color: white;
+}
+footer .endContacts .endData div hr {
+  width: 90%;
+  height: 1px;
+}
+footer .endContacts .endData div span {
+  font-size: 18px;
+  color: white;
+  font-family: cursive;
+}
+footer .contacts {
+  width: 100%;
+  height: 435px;
+  background-image: url(../image/flour.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .contacts .sub_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  line-height: 30px;
+  font-family: "Raleway";
+}
+footer .contacts .sub_contact i {
+  color: white;
+}
+
+@font-face {
+  font-family: "IsadoraBold";
+  src: url("../fonts/IsadoraBold/IsadoraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Nautilus";
+  src: url("../fonts/NautilusPompilius/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/RalewayRegular/RalewayRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
